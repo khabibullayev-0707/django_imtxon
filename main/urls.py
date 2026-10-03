@@ -1,0 +1,3 @@
+from django.urls import path
+from . import views
+urlpatterns=[path('studentlar/',views.studentlar,name='studentlar'),path('rejalar/',views.rejalar,name='rejalar'),path('bajarilmagan-rejalar/',views.bajarilmagan_rejalar,name='bajarilmagan_rejalar'),path('bitiruvchilar/',views.bitiruvchilar,name='bitiruvchilar'),path('rejalar/<int:reja_id>/ochirish/',views.reja_ochirish,name='reja_ochirish'),path('reja-qoshish/',views.reja_qoshish,name='reja_qoshish'),path('studentlar/kattalar/',views.kattalar,name='kattalar'),path('bitiruvchilar/rejalari/',views.bitiruvchilar_rejalari,name='bitiruvchilar_rejalari'),path('talaba/<int:talaba_id>/rejalar/',views.talaba_rejalari,name='talaba_rejalari')]
